@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Фоторяд</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <script defer src="../js/slider.js"></script>
+
+    <!-- шрифты начало -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <!-- шрифты конец -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <p><img src="../images/adventure_logo.avif" width="300" height="120" alt=""></p>
+                <nav class="btn">
+                    <a class="nav__link" href="../../index.html">Главная</a>
+                    <a class="nav__link" href="about_the_hobby.html">О хобби</a>
+                    <a class="nav__link" href="skills.html">Развиваемые навыки</a>
+                    <a class="nav__link" href="requirements.html">Требования</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="gallery">
+        <div class="container">
+            <p><a name="gallery"></a></p>
+            <div class="gallery__title">Фоторяд</div>
+            <div class="adaptivn-slayder">
+                <div class="parag">
+                    <img src="../images/1.jpg" alt="">
+                </div>
+
+                <div class="parag">
+                    <img src="../images/2.jpg" alt="">
+                </div>
+
+                <div class="parag">
+                    <img src="../images/3.jpg" alt="">
+                </div>
+
+                <div class="parag">
+                    <img src="../images/4.jpg" alt="">
+                </div>
+
+                <div class="parag">
+                    <img src="../images/5.jpg" alt="">
+                </div>
+
+                <a class="prev" onclick="minusSlide()">❮</a>
+                <a class="next" onclick="plusSlide()">❯</a>
+            </div>
+
+            <div class="uneizmen-akemada">
+                <span class="noguma-pomoki-kadra" onclick="currentSlide(1)"></span>
+                <span class="noguma-pomoki-kadra" onclick="currentSlide(2)"></span>
+                <span class="noguma-pomoki-kadra" onclick="currentSlide(3)"></span>
+                <span class="noguma-pomoki-kadra" onclick="currentSlide(4)"></span>
+                <span class="noguma-pomoki-kadra" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
